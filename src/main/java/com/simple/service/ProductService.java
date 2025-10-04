@@ -1,10 +1,8 @@
 package com.simple.service;
 
-import java.util.List;
-
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
-import org.springframework.stereotype.Service;
+import module.java.base.Page;
+import module.java.base.Pageable;
+import module.java.base.Service;
 
 import lombok.RequiredArgsConstructor;
 import com.simple.repository.ProductRepository;
@@ -12,7 +10,7 @@ import com.simple.dto.ProductDTO;
 import com.simple.entity.Product;
 import com.simple.mapper.ProductMapper;
 
-import jakarta.transaction.Transactional;
+import module.java.base.Transactional;
 
 @Service
 @RequiredArgsConstructor
