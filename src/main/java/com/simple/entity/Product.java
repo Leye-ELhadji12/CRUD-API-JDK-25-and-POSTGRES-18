@@ -1,9 +1,9 @@
 package com.simple.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import module.java.base.Entity;
+import module.java.base.GeneratedValue;
+import module.java.base.GenerationType;
+import module.java.base.Id;
 import lombok.Data;
 
 @Entity

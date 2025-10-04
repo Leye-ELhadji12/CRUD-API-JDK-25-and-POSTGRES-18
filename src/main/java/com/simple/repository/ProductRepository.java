@@ -1,10 +1,9 @@
 package com.simple.repository;
 
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
+import module.java.base.JpaRepository;
+import module.java.base.Repository;
 
 import com.simple.entity.Product;
 
-// @Repository
 public interface ProductRepository extends JpaRepository<Product, Long> {
 }

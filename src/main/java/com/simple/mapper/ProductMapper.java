@@ -1,7 +1,7 @@
 package com.simple.mapper;
 
-import org.springframework.beans.BeanUtils;
-import org.springframework.stereotype.Component;
+import module.java.base.BeanUtils;
+import module.java.base.Component;
 
 import com.simple.dto.ProductDTO;
 import com.simple.entity.Product;

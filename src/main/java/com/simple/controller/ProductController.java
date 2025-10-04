@@ -1,25 +1,25 @@
 package com.simple.controller;
 
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import module.java.base.RequestMapping;
+import module.java.base.RestController;
 
 import com.simple.dto.ProductDTO;
 import com.simple.service.ProductService;
 
 import lombok.RequiredArgsConstructor;
 
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Pageable;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PatchMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestParam;
+import module.java.base.Page;
+import module.java.base.PageRequest;
+import module.java.base.Pageable;
+import module.java.base.HttpStatus;
+import module.java.base.ResponseEntity;
+import module.java.base.DeleteMapping;
+import module.java.base.GetMapping;
+import module.java.base.PatchMapping;
+import module.java.base.PathVariable;
+import module.java.base.PostMapping;
+import module.java.base.RequestBody;
+import module.java.base.RequestParam;
 
 
 @RestController
