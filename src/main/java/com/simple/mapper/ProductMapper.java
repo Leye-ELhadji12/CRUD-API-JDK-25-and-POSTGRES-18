@@ -1,10 +1,10 @@
 package com.simple.mapper;
 
-import module.java.base.BeanUtils;
-import module.java.base.Component;
 
 import com.simple.dto.ProductDTO;
 import com.simple.entity.Product;
+import org.springframework.beans.BeanUtils;
+import org.springframework.stereotype.Component;
 
 @Component
 public class ProductMapper {

@@ -1,25 +1,15 @@
 package com.simple.controller;
 
-import module.java.base.RequestMapping;
-import module.java.base.RestController;
-
 import com.simple.dto.ProductDTO;
 import com.simple.service.ProductService;
 
 import lombok.RequiredArgsConstructor;
-
-import module.java.base.Page;
-import module.java.base.PageRequest;
-import module.java.base.Pageable;
-import module.java.base.HttpStatus;
-import module.java.base.ResponseEntity;
-import module.java.base.DeleteMapping;
-import module.java.base.GetMapping;
-import module.java.base.PatchMapping;
-import module.java.base.PathVariable;
-import module.java.base.PostMapping;
-import module.java.base.RequestBody;
-import module.java.base.RequestParam;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 
 @RestController
@@ -31,7 +21,7 @@ public class ProductController {
     @GetMapping
     public ResponseEntity<Page<ProductDTO>> getAllProducts(
         @RequestParam (defaultValue = "0") int page,
-        @RequestParam (defaultValue = "10") int size) {
+        @RequestParam(defaultValue = "10") int size) {
             Pageable pageable = PageRequest.of(page, size);
         return ResponseEntity.ok(productService.getAllProducts(pageable));
     }

@@ -1,16 +1,15 @@
 package com.simple.service;
 
-import module.java.base.Page;
-import module.java.base.Pageable;
-import module.java.base.Service;
-
 import lombok.RequiredArgsConstructor;
 import com.simple.repository.ProductRepository;
 import com.simple.dto.ProductDTO;
 import com.simple.entity.Product;
 import com.simple.mapper.ProductMapper;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
-import module.java.base.Transactional;
 
 @Service
 @RequiredArgsConstructor
@@ -19,7 +18,7 @@ public class ProductService {
     private final ProductRepository productRepository;
     private final ProductMapper productMapper;
 
-    @Transactional
+    @Transactional(readOnly = true)
     public ProductDTO createProduct(ProductDTO productDTO) {
         Product product = productMapper.toEntity(productDTO);
         Product savedProduct = productRepository.save(product);
